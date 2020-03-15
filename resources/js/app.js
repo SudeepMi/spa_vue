@@ -7,8 +7,10 @@ import VueAxios from 'vue-axios';
 import axios from 'axios';
 import {routes} from './route';
 
+
 Vue.use(VueRouter);
 Vue.use(VueAxios, axios);
+Vue.use(require('vue-moment'));
 
 const router = new VueRouter({
     mode: 'history',

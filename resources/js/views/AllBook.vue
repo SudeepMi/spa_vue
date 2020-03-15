@@ -18,8 +18,8 @@
                 <td>{{ book.id }}</td>
                 <td>{{ book.name }}</td>
                 <td>{{ book.author }}</td>
-                <td>{{ book.created_at }}</td>
-                <td>{{ book.updated_at }}</td>
+                <td>{{ book.created_at | moment("dddd, MMMM Do YYYY") }}</td>
+                <td>{{ book.updated_at | moment("dddd, MMMM Do YYYY") }}</td>
                 <td>
                     <div class="btn-group" role="group">
                         <router-link :to="{name: 'edit', params: { id: book.id }}" class="btn btn-primary">Edit
